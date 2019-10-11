@@ -15,6 +15,18 @@ public class WinPercentage
 
     while (played < 0 || won > played || won < 0)
     {
+      if (won > played)
+      {
+        System.out.println("Games won must be less than total games played");
+      }
+      if (played < 0)
+      {
+        System.out.println("Total number of games played must be greater than 0");
+      }
+      if (won < 0)
+      {
+        System.out.println("Total number of gams won must be greater than 0");
+      }
       System.out.println("Enter number of games played:");
       played = scan.nextInt();
       System.out.println("Enter number of games won:");
