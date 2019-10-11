@@ -13,11 +13,11 @@ public class WinPercentage
     System.out.println("Enter number of games won:");
     int won = scan.nextInt();
 
-    while (played < 0 || won > played)
+    while (played < 0 || won > played || won < 0)
     {
+      
+    }
       double finalWin = ((won/played) * 100);
       System.out.println("Your winning percentage is: " + finalWin);
-    }
-
   }
 }
