@@ -21,6 +21,6 @@ public class WinPercentage
       won = scan.nextInt();
     }
       double finalWin = (double) won/played *100;
-      System.out.println("Your winning percentage is: " + finalWin);
+      System.out.println("Your winning percentage is: " + finalWin + "%");
   }
 }
