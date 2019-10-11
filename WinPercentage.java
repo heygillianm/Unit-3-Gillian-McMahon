@@ -25,7 +25,7 @@ public class WinPercentage
       }
       if (won < 0)
       {
-        System.out.println("Total number of gams won must be greater than 0");
+        System.out.println("Total number of games won must be greater than 0");
       }
       System.out.println("Enter number of games played:");
       played = scan.nextInt();
