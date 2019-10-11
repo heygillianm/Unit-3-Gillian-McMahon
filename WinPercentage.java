@@ -1,11 +1,11 @@
 import java.util.Scanner;
-import java.util.DecimalFormat;
+import java.text.DecimalFormat;
 
 public class WinPercentage
 {
   public static void main (String [] args) {
     Scanner scan = new Scanner(System.in);
-    DecimalFormat dec = new DecimalFormat(".##");
+    DecimalFormat dec = new DecimalFormat(".#");
     
 
     System.out.println("Enter number of games played:");
@@ -13,7 +13,7 @@ public class WinPercentage
     System.out.println("Enter number of games won:");
     int won = scan.nextInt();
 
-    while (played > 0 && won < played)
+    while (played < 0 || won > played)
     {
       double finalWin = ((won/played) * 100);
       System.out.println("Your winning percentage is: " + finalWin);
