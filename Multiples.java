@@ -26,10 +26,16 @@ public class Multiples
       upperLim = scan.nextInt();
     }
 
+    int counter = 0;
     for (int i = posInt; i <= upperLim; i += posInt) //figure out multiples.
     {
       System.out.print(i + " "); //upperlim stops the loop
-      counter++;
+
+      counter++; // every 5th line, print a blank line
+      if(counter == 5) {
+        System.out.println();
+        counter = 0; // reset the line counter
+      }
     }
   }
 }
